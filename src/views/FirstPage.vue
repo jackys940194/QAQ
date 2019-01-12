@@ -45,7 +45,7 @@ export default {
         console.log(response);
       });
       const data = response.data;
-  }
+    }
   },
   mounted() {
 

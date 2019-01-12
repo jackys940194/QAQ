@@ -91,14 +91,15 @@ export default {
         '12345615',
         '12345616'
       ],
+      myChart: null
     }
   },
   methods: {
     drawChart(){
       var canvas = document.getElementsByClassName('chart');
       var ctx = canvas[Number(this.currentTab)].getContext("2d");
-      
-      var myChart = new Chart(ctx, {
+      if(this.myChart !== null) this.myChart.destroy();
+      this.myChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: ["0~3", "3~6", "6~9", "9~12", "12~15", "15~18", "18~21", "21~24"],
