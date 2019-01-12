@@ -70,8 +70,8 @@ export default {
   },
   mounted() {
     // 網頁 Load 完後你要做什麼事
-    this.callApiOnce();
-    this.callApiMulti();
+    // this.callApiOnce();
+    // this.callApiMulti();
   }
   /*css
   .temp {

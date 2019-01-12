@@ -6,13 +6,14 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import moment from 'moment'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(ElementUI);
-
-
+Vue.use(moment);
 Vue.config.productionTip = false;
+
+
 
 const service = axios.create({
 });
